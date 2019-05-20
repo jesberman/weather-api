@@ -3,7 +3,7 @@
 function getWeather() {
     var cityEntry;
     cityEntry = document.getElementById("city-input").value;
-    var weatherMap = "http://api.openweathermap.org/data/2.5/weather?q=";
+    var weatherMap = "https://api.openweathermap.org/data/2.5/weather?q=";
     var apiKey = "&APPID=558a20e42f3c2c93a5ee65e035215b8a";
     var url =weatherMap+cityEntry+apiKey;
     console.log(url);
