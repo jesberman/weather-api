@@ -1,0 +1,76 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    color: white; 
+    background-color: rgb(201, 220, 233);
+}
+
+#header {
+    background-color: #272A34;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-left: 5%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    margin-top: 30px;
+    border-radius: 25px;    
+    box-shadow: 5px 10px 18px #888888;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#card {
+    background-color: #272A34;
+    width: 80%;
+    margin: auto;
+    padding-left: 5%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 25px;
+    box-shadow: 5px 10px 18px #888888;
+    text-shadow: 2px 2px 4px #000000;
+    margin-bottom: 30px;
+    visibility: hidden;
+}
+
+#city {
+    display: inline-block;
+}
+
+#country{
+    display: inline-block;
+}
+
+#temp-info{
+    margin-top: 0px;
+    font-size: 62px;
+    margin-bottom: 0px;
+}
+
+#high {
+    display: inline-block;
+    width: 13%;
+}
+
+#low {
+    display: inline-block;
+    width: 10%;
+}
+
+#weather-info {
+    width: 50%;
+}
+
+#picture-info {
+    width: 30%;
+    display: inline-block;
+}
+
+#humid {
+    display: inline-block;
+    width: 20%;
+}
+
+#wind {
+    display: inline-block;
+    width: 30%;
+}

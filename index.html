@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Weather API
+    </title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <h1>
+            Global Weather API
+        </h1>
+        <input type="text" id="city-input" placeholder="Please Enter City Name">
+        <button id="submit" onclick="getWeather();">
+            Submit
+        </button>
+    </div>
+
+    <div id="card">
+        <div id="city">
+            <!-- <h3>
+                City
+            </h3> -->
+            <h1 id="city-info">
+            </h1>
+        </div>
+
+        <div id="country">
+            <!-- <h3>
+                Country
+            </h3> -->
+            <h1 id="country-info">
+            </h1>
+        </div>
+
+        <!-- <h3>
+            Weather
+        </h3> -->
+        <h2 id="weather-info">
+        </h2>
+        <!-- <h3>
+            Picture
+        </h3> -->
+        <div id="picture-info">
+        </div>
+
+        <!-- <h3>
+            Current Temperature
+        </h3> -->
+
+        <div id="high">
+            <h3>
+                High
+            </h3>
+            <h2 id="high-info">
+            </h2>
+        </div>
+
+        <div id="low">
+            <h3>
+                Low
+            </h3>
+            <h2 id="low-info">
+            </h2>
+        </div>
+
+        <h1 id="temp-info">
+        </h1>
+
+        <!-- <h3>
+        Cloudiness
+    </h3>
+    <h2 id="cloud-info">
+    </h2> -->
+        <div id="humid">
+            <h3>
+                Humidity
+            </h3>
+            <h2 id="humid-info">
+            </h2>
+        </div>
+
+        <div id="wind">
+            <h3>
+                Wind Direction
+            </h3>
+            <h2 id="wind-info">
+            </h2>
+        </div>
+    </div>
+
+    <script src="assets/javascript/api.js">
+    </script>
+</body>
+
+</html>
