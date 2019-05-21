@@ -37,34 +37,37 @@ function getWeather() {
         var windDirectionInDegrees = (response.wind.deg);
 
         if(0 < windDirectionInDegrees && windDirectionInDegrees < 22.5){
-            windDirection = "North";
+            windDirection = "N";
         }
         else if (22.5 < windDirectionInDegrees && windDirectionInDegrees < 67.5) {
-            windDirection ="North East";
+            windDirection ="NE";
         }
         else if (67.5 < windDirectionInDegrees && windDirectionInDegrees < 112.5) {
-            windDirection ="East";
+            windDirection ="E";
         }
         else if (112.5 < windDirectionInDegrees && windDirectionInDegrees < 157.5) {
-            windDirection ="South East";
+            windDirection ="SE";
         }
         else if (157.5 < windDirectionInDegrees && windDirectionInDegrees < 202.5) {
-            windDirection ="South";
+            windDirection ="S";
         }
         else if (202.5 < windDirectionInDegrees && windDirectionInDegrees < 247.5) {
-            windDirection ="South West";
+            windDirection ="SW";
         }
         else if (247.5 < windDirectionInDegrees && windDirectionInDegrees < 292.5) {
-            windDirection ="West";
+            windDirection ="W";
         }
         else if (292.5 < windDirectionInDegrees && windDirectionInDegrees < 337.5) {
-            windDirection ="North West";
+            windDirection ="NW";
         }
         else if (windDirectionInDegrees > 337.5) {
-            windDirection ="North";
+            windDirection ="N";
         }
         document.getElementById("wind-info").innerHTML = windDirection;
-        
+        var windSpeed = (response.wind.speed) * 2.236936;
+        var windspeedRoundedOff = windSpeed.toFixed(0);
+        document.getElementById("wind-speed").innerHTML = windspeedRoundedOff + "mph";
+
         var icon = "<img src='assets/images/"+(response.weather[0].main)+".png'>";
         document.getElementById("picture-info").innerHTML = icon;
     });
